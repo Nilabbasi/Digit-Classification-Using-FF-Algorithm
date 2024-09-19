@@ -20,11 +20,21 @@ The repository is divided into two parts:
 - **Local Layer Optimization**: Each hidden layer focuses on maximizing its local goodness, which streamlines the learning process.
 - **Continuous Improvement**: Various techniques are applied to improve accuracy, following the guidance from the original paper and experimental results.
 
+### Dataset Samples
+
+- **Training Samples**:
+  ![Train Samples](images/Sample_of_Train_Images.png)
+
+- **Testing Samples**:
+  ![Test Samples](images/Sample_of_Test_Images.png)
+
 ---
 
 ## Supervised Learning: Forward-Forward Algorithm
 
 In the **Supervised Learning** implementation, the Forward-Forward Algorithm is applied to the MNIST dataset with labeled data. The algorithm adjusts the network's weights based on the goodness scores for both positive and negative samples.
+
+![Positive-Negative Example](images/Original_Positive_Negative.png)
 
 ### Key Features
 
@@ -37,6 +47,8 @@ In the **Supervised Learning** implementation, the Forward-Forward Algorithm is 
 The supervised model is tested over multiple epochs, and error rates are plotted to provide insights into the learning progression. 
 The results indicate strong generalization with minimal overfitting.
 
+![Supervised Notebook Results](images/Accuracy_Supervised.png)
+
 ---
 
 ## Unsupervised Learning: Forward-Forward Algorithm
@@ -44,6 +56,8 @@ The results indicate strong generalization with minimal overfitting.
 ### Overview
 
 In the **Unsupervised Learning** section of the project, the Forward-Forward Algorithm is applied without labeled data. The unsupervised version focuses on generating negative data by creating hybrid images through the use of masks. These masks blur regions of digit images and combine them with other digits, following the procedure described in Geoffrey Hinton's paper.
+
+![Masks](images/Unsupervised_sample.png)
 
 ### Key Features
 
