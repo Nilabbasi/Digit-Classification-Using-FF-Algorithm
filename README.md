@@ -4,6 +4,8 @@
 
 This repository implements the **Forward-Forward (FF) Algorithm** for classifying digits from the MNIST dataset, as outlined in **[Geoffrey Hinton's paper](https://www.cs.toronto.edu/~hinton/FFA13.pdf)**, *"The Forward-Forward Algorithm: Some Preliminary Investigations."* The FF Algorithm serves as an alternative to backpropagation, where two forward passes are performed—one with positive data (real MNIST digits) and another with negative data (corrupted or generated inputs). The network adjusts weights to maximize the *"goodness"* of positive data and minimize the *"goodness"* of negative data.
 
+![Goodness](images/Goodness.PNG)
+
 The repository is divided into two parts:
 1. **Supervised Learning**: Implementing the FF Algorithm with labeled data.
 2. **Unsupervised Learning**: Applying the FF Algorithm without relying on labeled data.
